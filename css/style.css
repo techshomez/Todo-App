@@ -1,0 +1,77 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #todo__wrapper {
+      max-width: 400px;
+      width: 100%;
+      background-color: #ccc;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+	
+	.title__box {
+		display:flex;
+		
+		align-items:center;
+		gap:1rem;
+	}
+	
+	.title__box >input{
+		width:200px;
+		height:20px;
+		border:none;
+		border-radius:5px;
+		padding:10px;
+		outline:none;
+	}
+	
+	.title__box >button{
+		width:50px;
+		height:40px;
+		border:none;
+		cursor:pointer;
+		border-radius:5px;
+	}
+	
+	.tods{
+	  height:400px;
+      margin-top:3rem;
+      overflow-y: scroll;
+	}
+
+    .todo-item {
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+
+    .todo-item input[type="checkbox"] {
+      margin-right: 8px;
+    }
+
+    .delete-btn {
+      background-color: #ff5757;
+      color: #fff;
+      border: none;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .error-message {
+      color: #ff5757;
+      margin-top: 10px;
+    }
